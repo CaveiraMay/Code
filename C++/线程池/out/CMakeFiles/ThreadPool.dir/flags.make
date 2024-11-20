@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/caveiramay/Code/C++/线程池/include
+CXX_INCLUDES = -I/Users/caveiramay/Code/Git/C++/线程池/include
 
 CXX_FLAGSarm64 = -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk
 

@@ -1,0 +1,3 @@
+/Users/caveiramay/Code/Git/C++/线程池/build/CMakeFiles/ThreadPool.dir
+/Users/caveiramay/Code/Git/C++/线程池/build/CMakeFiles/edit_cache.dir
+/Users/caveiramay/Code/Git/C++/线程池/build/CMakeFiles/rebuild_cache.dir
