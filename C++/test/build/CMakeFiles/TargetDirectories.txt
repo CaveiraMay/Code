@@ -1,0 +1,3 @@
+/Users/caveiramay/Code/C++/test/build/CMakeFiles/test.dir
+/Users/caveiramay/Code/C++/test/build/CMakeFiles/edit_cache.dir
+/Users/caveiramay/Code/C++/test/build/CMakeFiles/rebuild_cache.dir

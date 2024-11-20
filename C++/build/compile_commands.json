@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/caveiramay/Code/C++/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14  -I/Users/caveiramay/Code/C++/线程池/include -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/ThreadPool.dir/src/Task.cpp.o -c /Users/caveiramay/Code/C++/线程池/src/Task.cpp",
+  "file": "/Users/caveiramay/Code/C++/线程池/src/Task.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/src/Task.cpp.o"
+},
+{
+  "directory": "/Users/caveiramay/Code/C++/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14  -I/Users/caveiramay/Code/C++/线程池/include -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/ThreadPool.dir/src/Thread.cpp.o -c /Users/caveiramay/Code/C++/线程池/src/Thread.cpp",
+  "file": "/Users/caveiramay/Code/C++/线程池/src/Thread.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/src/Thread.cpp.o"
+},
+{
+  "directory": "/Users/caveiramay/Code/C++/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14  -I/Users/caveiramay/Code/C++/线程池/include -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/ThreadPool.dir/src/ThreadPool.cpp.o -c /Users/caveiramay/Code/C++/线程池/src/ThreadPool.cpp",
+  "file": "/Users/caveiramay/Code/C++/线程池/src/ThreadPool.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/src/ThreadPool.cpp.o"
+},
+{
+  "directory": "/Users/caveiramay/Code/C++/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin24-g++-14  -I/Users/caveiramay/Code/C++/线程池/include -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/ThreadPool.dir/main.cpp.o -c /Users/caveiramay/Code/C++/线程池/main.cpp",
+  "file": "/Users/caveiramay/Code/C++/线程池/main.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/main.cpp.o"
+}
+]
