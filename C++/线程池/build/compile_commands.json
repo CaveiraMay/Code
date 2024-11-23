@@ -19,6 +19,12 @@
 },
 {
   "directory": "/Users/caveiramay/Code/Git/C++/线程池/build",
+  "command": "/usr/bin/clang++  -I/Users/caveiramay/Code/Git/C++/线程池/include -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/ThreadPool.dir/src/Tool.cpp.o -c /Users/caveiramay/Code/Git/C++/线程池/src/Tool.cpp",
+  "file": "/Users/caveiramay/Code/Git/C++/线程池/src/Tool.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/src/Tool.cpp.o"
+},
+{
+  "directory": "/Users/caveiramay/Code/Git/C++/线程池/build",
   "command": "/usr/bin/clang++  -I/Users/caveiramay/Code/Git/C++/线程池/include -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -o CMakeFiles/ThreadPool.dir/main.cpp.o -c /Users/caveiramay/Code/Git/C++/线程池/main.cpp",
   "file": "/Users/caveiramay/Code/Git/C++/线程池/main.cpp",
   "output": "CMakeFiles/ThreadPool.dir/main.cpp.o"

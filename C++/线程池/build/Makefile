@@ -225,6 +225,30 @@ src/ThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/src/ThreadPool.cpp.s
 .PHONY : src/ThreadPool.cpp.s
 
+src/Tool.o: src/Tool.cpp.o
+.PHONY : src/Tool.o
+
+# target to build an object file
+src/Tool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/src/Tool.cpp.o
+.PHONY : src/Tool.cpp.o
+
+src/Tool.i: src/Tool.cpp.i
+.PHONY : src/Tool.i
+
+# target to preprocess a source file
+src/Tool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/src/Tool.cpp.i
+.PHONY : src/Tool.cpp.i
+
+src/Tool.s: src/Tool.cpp.s
+.PHONY : src/Tool.s
+
+# target to generate assembly for a file
+src/Tool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/src/Tool.cpp.s
+.PHONY : src/Tool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... src/ThreadPool.o"
 	@echo "... src/ThreadPool.i"
 	@echo "... src/ThreadPool.s"
+	@echo "... src/Tool.o"
+	@echo "... src/Tool.i"
+	@echo "... src/Tool.s"
 .PHONY : help
 
 

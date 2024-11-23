@@ -30,7 +30,7 @@ void ThreadPool::setTaskQueMaxThreshHold(int threshHold)
     taskQueThreshHold_ = threshHold;
 }
 
-void ThreadPool::submitTask(std::shared_ptr<Task> task)
+Result ThreadPool::submitTask(std::shared_ptr<Task> task)
 {
         //获取锁
         std::unique_lock<std::mutex> lock(TaskQueMtx_);
@@ -43,6 +43,7 @@ void ThreadPool::submitTask(std::shared_ptr<Task> task)
                 [&]()-> bool {return taskQue_.size() < (size_t)taskQueThreshHold_;})) {
                         //表示notFull_等待 1s 条件依然没有得到满足
                         std::cerr << "task queue is Full, submit task fail!" << std::endl;
+                        return Result(task, false);
                 }
         //如果有空余, 把任务放在任务队列中
         taskQue_.emplace(task);
@@ -50,6 +51,8 @@ void ThreadPool::submitTask(std::shared_ptr<Task> task)
         //因为新放了任务, 任务队列肯定不为空, 使用 notEmpty_ 通知, 赶快分配线程执行任务
 
         notEmpty_.notify_all();
+        //返回任务的 Result 对象
+        return Result(task);
 }
 
 void ThreadPool::start(int initThreadSize)
@@ -92,9 +95,9 @@ void ThreadPool::threadFunc()
                         notFull_.notify_all();
                 }//释放锁, 让其他线程操作任务队列取任务
                 if(task != nullptr) {
-                        //当前线程负责执行这个任务
-                        task->run();
-                        
+                        //当前线程负责执行这个任务, 执行完成后调用 Result.setVal()
+                        // task->run();
+                        task->exec();
                 }
         }
 }

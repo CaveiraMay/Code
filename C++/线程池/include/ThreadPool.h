@@ -44,7 +44,7 @@ public:
         //设置任务队列上限阈值
         void setTaskQueMaxThreshHold(int threshHold);
         //给线程池提交任务
-        void submitTask(std::shared_ptr<Task> task);
+        Result submitTask(std::shared_ptr<Task> task);
         //开启线程池
         void start(int initThreadSize = 4);
         //禁止拷贝
